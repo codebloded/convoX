@@ -6,17 +6,17 @@
 }
 
 body {
+    background: url(./Confetti-Doodles.svg) no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #F8F8F8;
     font-family: 'Roboto', sans-serif;
 }
 section.container {
     width: 800px;
     max-width: 90%;
-    background: rgba(0, 0, 0, 0.74);
+    background: rgb(0 0 0 / 81%);
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 45%), 0 4px 6px -2px rgb(0 0 0 / 46%);
 }
 .brand {
@@ -28,7 +28,7 @@ section.container {
 .brand h1 {
     text-transform: uppercase;
     font-size: 20px;
-    color: #F8F8F8;
+    color: #020202;
     margin-left: 10px;
 }
 .message_box{
@@ -71,5 +71,5 @@ textarea {
     font-size: 14px;
 }
 img{
-    filter: invert(0);
+    filter: contrast(10.5);
 }
