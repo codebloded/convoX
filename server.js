@@ -14,3 +14,11 @@ app.get('/', (req, res)=>{
 http.listen(port, ()=>{ 
     console.log(`Server is up and running at http://${host}:${port}`);
 });
+
+//socket connection
+io.on('connection',(socket)=>{
+    console.log("Connected...");
+    socket.on('message', (msg)=>{
+        socket.broadcast.emit('message', msg);
+    })
+});
